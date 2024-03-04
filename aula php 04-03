@@ -10,12 +10,25 @@
 <p>O ano atual é <?= date('Y'); ?></p>
 
 
+
+
 <ul>
 <?php for ($i = 0; $i < 5; $i++): ?>
 <li>cor <?= $i + 1 ?></li>
 <?php endfor; ?>
 </ul>
 
+<center>
+<?php  echo "Olá, ", "mundo", "!"; ?><br>
+<?php  echo "Sou feita de madeira, ",  "!"; ?><br>
+<?php  echo "Madeira, matéria morta, ",  "!"; ?><br>
+<?php  echo "Não há nada no mundo, ",  "!"; ?><br>
+<?php  echo "Mais viva que uma porta 🚪, ",  "!"; ?><br>
+</center>
+
+
+<?php $nome = 'Maria';
+echo 'Olá, capricorno'; // Saída: Olá, $nome ?>
 
 </body>
 </html>

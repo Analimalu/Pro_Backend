@@ -11,30 +11,30 @@ jan.geometry("600x300")
 jan.configure(background="white")
 jan.resizable(width=False,height=False) 
 jan.attributes("-alpha", 0.9)
-jan.iconbitmap(default="icons/cenoura.ico.ico")
+jan.iconbitmap(default="icons/icon.ico")
 
 #=== carregar imagens 
-Logo = PhotoImage(file="icons/Logo1.png")
+Logo = PhotoImage(file="icons/sandu.png.png")
 
 
 #=== Widgets ==========
 
-LeftFrame = Frame(jan,width=200,height=300,bg="#F49D6E", relief="raise")
+LeftFrame = Frame(jan,width=200,height=300,bg="#c5ebd0", relief="raise")
 LeftFrame.pack(side=LEFT)
 
-RightFrame = Frame(jan,width=395,height=300,bg="#565264", relief="raise")
+RightFrame = Frame(jan,width=395,height=300,bg="#91c3d7", relief="raise")
 RightFrame.pack(side=RIGHT)
 
-LogoLabel = Label(LeftFrame, image=Logo, bg="#F49D6E")
+LogoLabel = Label(LeftFrame, image=Logo, bg="#c5ebd0")
 LogoLabel.place(x=0,y=40)
 
-UserLabel = Label(RightFrame, text="Username:", font=("Century Gothic", 20), bg="#565264", fg="white")
+UserLabel = Label(RightFrame, text="Username:", font=("Century Gothic", 20), bg="#91c3d7", fg="white")
 UserLabel.place(x=5,y=100)
 
 UserEntry = ttk.Entry(RightFrame,width=30)
 UserEntry.place(x=150,y=110)
 
-PassLabel = Label(RightFrame, text="Password:", font=("Century Gothic", 20), bg="#565264", fg="white")
+PassLabel = Label(RightFrame, text="Password:", font=("Century Gothic", 20), bg="#91c3d7", fg="white")
 PassLabel.place(x=5,y=150)
 
 PassEntry = ttk.Entry(RightFrame,width=30,show="•")
@@ -65,13 +65,13 @@ def Register():
     LoginButton.place(x=5000)
     RegisterButton.place(x=5000)
     #Inserindo widgets de cadastro
-    NomeLabel = Label(RightFrame, text="Name:", font=("Century Gothic", 20), bg="#565264", fg="white")
+    NomeLabel = Label(RightFrame, text="Name:", font=("Century Gothic", 20), bg="#91c3d7", fg="white")
     NomeLabel.place(x=5,y=5)
 
     NomeEntry = ttk.Entry(RightFrame,width=39)
     NomeEntry.place(x=100, y=16)
 
-    EmailLabel = Label(RightFrame, text="Email:", font=("Century Gothic", 20), bg="#565264", fg="white")
+    EmailLabel = Label(RightFrame, text="Email:", font=("Century Gothic", 20), bg="#91c3d7", fg="white")
     EmailLabel.place(x=5,y=55)
 
     EmailEntry = ttk.Entry(RightFrame,width=39)
